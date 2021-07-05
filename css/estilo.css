@@ -1,0 +1,139 @@
+table{
+    width: 700px;
+    margin: 0 auto;
+}
+
+table, td, th{
+    border: solid 1px #000;
+}
+
+#div-form{
+    text-align: center;
+}
+
+form div {
+    margin: 20px;
+}
+
+form label{
+    display: block;
+    font-weight: bold;
+}
+
+header {
+	grid-area: header;
+}
+
+.menu {
+	grid-area: menu;
+}
+
+
+main {
+	grid-area: main;
+}
+
+footer {
+	grid-area: footer;
+}
+
+.container {
+    display: grid;
+    /* grid-template-columns: 30% 50% 20%; */
+    grid-template-rows: 20% 10% auto 10%;
+    grid-template-areas:
+        'header'
+        'menu'
+        'main'
+        'footer';
+    grid-gap: 10px;
+    height: 100%;
+    width: 90%;
+    margin: auto;
+}
+
+header, main, footer, .menu {
+    background-color: #d8e5f1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+input, textarea, select{
+    width: 400px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+}
+
+textarea{
+    height: 150px;
+}
+
+select{
+    background-color: #fff;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+ul li{
+    border: 1px solid rgb(108, 145, 132);
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(202, 204, 240);
+}
+
+ul li:hover{
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+#btn-limpar-sessao{
+    margin: 20px auto;
+    background-color: antiquewhite;
+    border: 1px solid #000;
+    width: 100px;
+    display: table;
+    height: 35px;
+}
+
+#btn-limpar-sessao a{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.msg-cadastro-contato{
+    margin: 10px auto;
+    padding: 5px;
+}
+
+.msg-cadastro-sucesso{
+    border: 1px solid rgb(116, 197, 134);
+    background: #4eb54e;
+    color: white;
+}
+
+.msg-cadastro-erro{
+    border: 1px solid rgb(222, 45, 20);
+    background: #d85746;
+    color: white;
+}
